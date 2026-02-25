@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/styles.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+		/>
+		<!-- defer атрибут что будет загружаться в конце -->
+	</head>
+	<body>
+		<header class="header">
+			<div class="header__top">
+				<div class="container">
+					<div class="header__top-inner">
+						<div class="header__top-box">
+							<div class="header__top-language">
+								<label class="language-select-title" for="language-select"
+									>language:</label
+								>
+								<select id="language-select" name="language">
+									<option value="ru">Русский</option>
+									<option value="en">English</option>
+									<option value="es">Español</option>
+									<option value="fr">Français</option>
+									<option value="de">Deutsch</option>
+									<option value="zh">中文</option>
+								</select>
+							</div>
+							<div class="header__top-currency">
+								<label class="currency-select-title" for="currency-select"
+									>currency:</label
+								>
+								<select id="currency-select">
+									<option value="RUB">RUB</option>
+									<option value="USD">USD</option>
+									<option value="EUR">EUR</option>
+									<option value="GBP">GBP</option>
+									<option value="CNY">CNY</option>
+									<option value="JPY">JPY</option>
+									<option value="INR">INR</option>
+								</select>
+							</div>
+						</div>
+						<div class="header__top-navigation">
+							<a href="#" class="header__top-navigation-link">Account</a>
+							<a href="#" class="header__top-navigation-link">Wishlist</a>
+							<a href="#" class="header__top-navigation-link">Checkout</a>
+							<a href="#" class="header__top-navigation-link">Log In</a>
+							<a href="#" class="header__top-navigation-link"> Sign Up</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header__bottom">
+				<div class="container">
+					<div class="header__bottom-inner">
+						<div class="header__bottom-logo">
+							<img src="images/logo.png" alt="" />
+						</div>
+						<div class="header__bottom-menu">
+							<nav class="menu">
+								<ul class="header__bottom-items">
+									<li class="header__bottom-item">
+										<a href="#" class="header__bottom-link">Home</a>
+									</li>
+									<li class="header__bottom-item">
+										<a href="#" class="header__bottom-link">women</a>
+									</li>
+									<li class="header__bottom-item">
+										<a href="#" class="header__bottom-link">men</a>
+									</li>
+									<li class="header__bottom-item">
+										<a href="#" class="header__bottom-link">other</a>
+									</li>
+									<li class="header__bottom-item">
+										<a href="#" class="header__bottom-link">purchase</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+
+						<div class="header__bottom-navigation">
+							<div class="header__bottom-search">
+								<input name="search" id="search" placeholder="Search.." />
+								<button type="submit" class="search-button">
+									<img src="images/Search_icons.png" alt="" />
+								</button>
+							</div>
+							<div class="header__bottom-cart">
+								<a href="" class="header__bottom-link-cart">
+									<img src="images/icons_1.png" alt="" />
+								</a>
+								<a href="" class="header__bottom-link-cart">
+									<img src="images/icons_2.png" alt="" />
+								</a>
+							</div>
+							<button class="header__cart-button">
+								cart
+								<span class="header__cart-count">(0)</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<section class="banner__slider">
+			<div class="banner__slider-inner">
+				<div class="swiper swiper-slide-banner">
+					<!-- Additional required wrapper -->
+					<div class="swiper-wrapper">
+						<!-- Slides -->
+						<div class="swiper-slide">
+							<div class="banner__slider-img">
+								<img src="images/slider-1.png" alt="slider" />
+							</div>
+							<div class="container">
+								<div class="banner__slider-content">
+									<h3 class="banner__slider-title">ALUMINUM CLUB</h3>
+									<p class="banner__slider-subtitle">Experience Ray-Ban</p>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="banner__slider-img">
+								<img src="images/slider-1.png" alt="slider" />
+							</div>
+							<div class="container">
+								<div class="banner__slider-content">
+									<h3 class="banner__slider-title">ALUMINUM CLUB</h3>
+									<p class="banner__slider-subtitle">
+										Elevate Your Vision with Ray-Ban
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="banner__slider-img">
+								<img src="images/slider-1.png" alt="slider" />
+							</div>
+							<div class="container">
+								<div class="banner__slider-content">
+									<h3 class="banner__slider-title">ALUMINUM CLUB</h3>
+									<p class="banner__slider-subtitle">
+										Precision Meets Style – Ray-Ban
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- If we need navigation buttons -->
+					<div class="navigation-btn">
+						<div class="swiper-button-prev banner-prev">
+							<img src="images/icons/arrow-left.png" alt="" />
+						</div>
+						<div class="swiper-button-next banner-next">
+							<img src="images/icons/arrow-right.png" alt="" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="products">
+			<div class="container">
+				<div class="goods__wrapper">
+					<div class="goods">
+						<h1 class="goods-title">Featured Products</h1>
+						<div class="goods__box">
+							<div class="goods__box-item new">
+								<img src="images/goods_1.png" alt="" class="goods__box-img" />
+								<div class="goods__box-wrapper">
+									<div class="goods__box-content">
+										<h3 class="goods__box-title">Lorem Ipsum is simply.</h3>
+										<div class="goods__box-price">$388.00</div>
+									</div>
+									<div class="goods__box-basket">
+										<img src="images/icons/cart.png" alt="" />
+									</div>
+								</div>
+							</div>
+							<div class="goods__box-item">
+								<img src="images/goods_2.png" alt="" class="goods__box-img" />
+								<div class="goods__box-wrapper">
+									<div class="goods__box-content">
+										<h3 class="goods__box-title">Lorem Ipsum is simply.</h3>
+										<div class="goods__box-price">$90.00</div>
+									</div>
+									<div class="goods__box-basket">
+										<img src="images/icons/cart.png" alt="" />
+									</div>
+								</div>
+							</div>
+							<div class="goods__box-item sale">
+								<img src="images/goods_3.png" alt="" class="goods__box-img" />
+								<div class="goods__box-wrapper">
+									<div class="goods__box-content">
+										<h3 class="goods__box-title">Lorem Ipsum is simply.</h3>
+										<div class="goods__stock">
+											<span class="old-price">$300.00</span>
+											<div class="goods__box-price">$300.00</div>
+										</div>
+									</div>
+									<div class="goods__box-basket">
+										<img src="images/icons/cart.png" alt="" />
+									</div>
+								</div>
+							</div>
+							<div class="goods__box-item">
+								<img src="images/goods_4.png" alt="" class="goods__box-img" />
+								<div class="goods__box-wrapper">
+									<div class="goods__box-content">
+										<h3 class="goods__box-title">Lorem Ipsum is simply.</h3>
+										<div class="goods__box-price">$180.00</div>
+									</div>
+									<div class="goods__box-basket">
+										<img src="images/icons/cart.png" alt="" />
+									</div>
+								</div>
+							</div>
+							<div class="goods__box-item new">
+								<img src="images/goods_5.png" alt="" class="goods__box-img" />
+								<div class="goods__box-wrapper">
+									<div class="goods__box-content">
+										<h3 class="goods__box-title">Lorem Ipsum is simply.</h3>
+										<div class="goods__box-price">$3.00</div>
+									</div>
+									<div class="goods__box-basket">
+										<img src="images/icons/cart.png" alt="" />
+									</div>
+								</div>
+							</div>
+							<div class="goods__box-item">
+								<img src="images/goods_6.png" alt="" class="goods__box-img" />
+								<div class="goods__box-wrapper">
+									<div class="goods__box-content">
+										<h3 class="goods__box-title">Lorem Ipsum is simply.</h3>
+										<div class="goods__box-price">$180.00</div>
+									</div>
+									<div class="goods__box-basket">
+										<img src="images/icons/cart.png" alt="" />
+									</div>
+								</div>
+							</div>
+							<div class="goods__box-item new">
+								<img src="images/goods_7.png" alt="" class="goods__box-img" />
+								<div class="goods__box-wrapper">
+									<div class="goods__box-content">
+										<h3 class="goods__box-title">Lorem Ipsum is simply.</h3>
+										<div class="goods__box-price">$500.00</div>
+									</div>
+									<div class="goods__box-basket">
+										<img src="images/icons/cart.png" alt="" />
+									</div>
+								</div>
+							</div>
+							<div class="goods__box-item sale">
+								<img src="images/goods_8.png" alt="" class="goods__box-img" />
+								<div class="goods__box-wrapper">
+									<div class="goods__box-content">
+										<h3 class="goods__box-title">Lorem Ipsum is simply.</h3>
+										<div class="goods__box-price">$180.00</div>
+									</div>
+									<div class="goods__box-basket">
+										<img src="images/icons/cart.png" alt="" />
+									</div>
+								</div>
+							</div>
+							<div class="goods__box-item new">
+								<img src="images/goods_9.png" alt="" class="goods__box-img" />
+								<div class="goods__box-wrapper">
+									<div class="goods__box-content">
+										<h3 class="goods__box-title">Lorem Ipsum is simply.</h3>
+										<div class="goods__box-price">$180.00</div>
+									</div>
+									<div class="goods__box-basket">
+										<img src="images/icons/cart.png" alt="" />
+									</div>
+								</div>
+							</div>
+						</div>
+						<h1 class="goods-title sloy">Staff pick</h1>
+						<div class="goods__box">
+							<div class="goods__box-item new">
+								<img src="images/goods_9.png" alt="" class="goods__box-img" />
+								<div class="goods__box-wrapper">
+									<div class="goods__box-content">
+										<h3 class="goods__box-title">Lorem Ipsum is simply.</h3>
+										<div class="goods__box-price">$378.00</div>
+									</div>
+									<div class="goods__box-basket">
+										<img src="images/icons/cart.png" alt="" />
+									</div>
+								</div>
+							</div>
+							<div class="goods__box-item">
+								<img src="images/goods_8.png" alt="" class="goods__box-img" />
+								<div class="goods__box-wrapper">
+									<div class="goods__box-content">
+										<h3 class="goods__box-title">Lorem Ipsum is simply.</h3>
+										<div class="goods__box-price">$90.00</div>
+									</div>
+									<div class="goods__box-basket">
+										<img src="images/icons/cart.png" alt="" />
+									</div>
+								</div>
+							</div>
+							<div class="goods__box-item new">
+								<img src="images/goods_3.png" alt="" class="goods__box-img" />
+								<div class="goods__box-wrapper">
+									<div class="goods__box-content">
+										<h3 class="goods__box-title">Lorem Ipsum is simply.</h3>
+										<div class="goods__stock">
+											<!-- <span class="old-price">$300.00</span> -->
+											<div class="goods__box-price">$180.00</div>
+										</div>
+									</div>
+									<div class="goods__box-basket">
+										<img src="images/icons/cart.png" alt="" />
+									</div>
+								</div>
+							</div>
+						</div>
+						<h1 class="goods-title sloy">New products</h1>
+						<div class="goods__box">
+							<div class="goods__box-item new">
+								<img src="images/goods_9.png" alt="" class="goods__box-img" />
+								<div class="goods__box-wrapper">
+									<div class="goods__box-content">
+										<h3 class="goods__box-title">Lorem Ipsum is simply.</h3>
+										<div class="goods__box-price">$378.00</div>
+									</div>
+									<div class="goods__box-basket">
+										<img src="images/icons/cart.png" alt="" />
+									</div>
+								</div>
+							</div>
+							<div class="goods__box-item new">
+								<img src="images/goods_8.png" alt="" class="goods__box-img" />
+								<div class="goods__box-wrapper">
+									<div class="goods__box-content">
+										<h3 class="goods__box-title">Lorem Ipsum is simply.</h3>
+										<div class="goods__box-price">$90.00</div>
+									</div>
+									<div class="goods__box-basket">
+										<img src="images/icons/cart.png" alt="" />
+									</div>
+								</div>
+							</div>
+							<div class="goods__box-item new">
+								<img src="images/goods_3.png" alt="" class="goods__box-img" />
+								<div class="goods__box-wrapper">
+									<div class="goods__box-content">
+										<h3 class="goods__box-title">Lorem Ipsum is simply.</h3>
+										<div class="goods__stock">
+											<!-- <span class="old-price">$300.00</span> -->
+											<div class="goods__box-price">$180.00</div>
+										</div>
+									</div>
+									<div class="goods__box-basket">
+										<img src="images/icons/cart.png" alt="" />
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="sidebar">
+						<div class="sidebar__sticky">
+							<div class="sidebar__box">
+								<h3 class="sidebar__box-title">Featured glass</h3>
+								<div class="sidebar__box-img">
+									<img
+										class="sidebar__img"
+										src="images/sidebar-bg.png"
+										alt=""
+									/>
+								</div>
+								<button class="sidebar__box-button">Check it Out</button>
+							</div>
+							<div class="sidebar__form">
+								<h3 class="sidebar__form-title">newsletters signup</h3>
+								<p class="sidebar__form-text">
+									Lorem ipsum dolor sit amen, dolor imun ra adlip ulissys
+								</p>
+								<div class="sidebar__form-box">
+									<input
+										type="text"
+										class="sidebar__form-input"
+										placeholder="Enter your email"
+									/>
+									<button type="submit" class="sidebar__form-button">
+										Subscribe
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer class="footer">
+			<div class="footer__top">
+				<div class="container">
+					<div class="footer__top-item">
+						<ul class="footer__top-list">
+							<li class="footer__top-items">
+								<div class="footer__top-img">
+									<img src="images/icons/car.png" alt="" />
+								</div>
+								<h3 class="footer__top-title">
+									Free shipping on orders over $100
+								</h3>
+							</li>
+							<li class="footer__top-items">
+								<div class="footer__top-img">
+									<img src="images/icons/phon.png" alt="" />
+								</div>
+								<h3 class="footer__top-title">call us! toLl free-</h3>
+								<a href="tel:40988880099">409-8888-0099</a>
+							</li>
+							<li class="footer__top-items"></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer__header">
+				<div class="container">
+					<div class="footer__header-box">
+						<div class="footer__header-items">
+							<div class="footer__header-title">Facebook</div>
+							<div class="footer__header-like">
+								<div class="footer__header-like-title">20000 Members</div>
+								<img src="images/icons/like.png" alt="" />
+							</div>
+							<div class="footer__header-gallery">
+								<div class="footer__header-gallery-img">
+									<img src="images/gallery-1.png" alt="" />
+								</div>
+								<div class="footer__header-gallery-img">
+									<img src="images/gallery-2.png" alt="" />
+								</div>
+								<div class="footer__header-gallery-img">
+									<img src="images/gallery-3.png" alt="" />
+								</div>
+								<div class="footer__header-gallery-img">
+									<img src="images/gallery-4.png" alt="" />
+								</div>
+								<div class="footer__header-gallery-img">
+									<img src="images/gallery-4.png" alt="" />
+								</div>
+								<div class="footer__header-gallery-img">
+									<img src="images/gallery-3.png" alt="" />
+								</div>
+								<div class="footer__header-gallery-img">
+									<img src="images/gallery-2.png" alt="" />
+								</div>
+								<div class="footer__header-gallery-img">
+									<img src="images/gallery-1.png" alt="" />
+								</div>
+							</div>
+							<div class="footer__header-text">facebook Social plugin</div>
+						</div>
+						<div class="footer__header-items">
+							<div class="footer__header-title">From twitter</div>
+							<ul class="footer__header-list">
+								<li class="footer__header-items">
+									<div class="footer__header-img">
+										<div><img src="images/icons/twitter.png" alt="" /></div>
+										<p class="footer__header-tex">
+											Lorem Ipsum is simply dummy text of the printing and
+											typesetting industry. Lorem Ipsum has been the industry's
+											standard dummy text ever since the
+										</p>
+									</div>
+								</li>
+								<li class="footer__header-items">
+									<div class="footer__header-img">
+										<div><img src="images/icons/twitter.png" alt="" /></div>
+										<p class="footer__header-tex">
+											Lorem Ipsum is simply dummy text of the printing and
+											typesetting industry. Lorem Ipsum has been the industry's
+											standard dummy text ever since the
+										</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="footer__header-items">
+							<div class="footer__header-title">information</div>
+							<div class="footer__header-information">
+								<a href="#" class="footer__header-information-link"
+									>Sed ultrices purus non.</a
+								>
+								<a href="#" class="footer__header-information-link"
+									>sodales sodales.</a
+								>
+								<a href="#" class="footer__header-information-link"
+									>Curabitur pretium dui vitae.</a
+								>
+								<a href="#" class="footer__header-information-link"
+									>Donec gravida mi in nisl
+								</a>
+								<a href="#" class="footer__header-information-link"
+									>faucibus leo condimentum.</a
+								>
+								<a href="#" class="footer__header-information-link"
+									>Donec et lorem suscipit.</a
+								>
+							</div>
+						</div>
+						<div class="footer__header-items">
+							<div class="footer__header-title">Contact Us</div>
+							<div class="footer__header-contact">
+								<ul class="footer__header-contact-items">
+									<li class="footer__header-contact-item">Leo Store</li>
+									<li class="footer__header-contact-item">Leopards media</li>
+									<li class="footer__header-contact-item">KVM Rpad, 4590GH</li>
+									<li class="footer__header-contact-item">
+										<a
+											href="tel:148988880099"
+											class="footer__header-contact-item-link"
+											>+1 489-8888-0099</a
+										>
+									</li>
+									<li class="footer__header-contact-item">
+										<a
+											href="mailto:mail@email.com"
+											class="footer__header-contact-item-link"
+											>mail@email.com
+										</a>
+									</li>
+								</ul>
+							</div>
+
+							<div class="footer__header-social">
+								<ul class="footer__header-social-items">
+									<li class="footer__header-social-item">
+										<a href="" class="footer__header-social-item-link">
+											<img src="images/icons/google.png" alt="" />
+										</a>
+									</li>
+									<li class="footer__header-social-item">
+										<a href="" class="footer__header-social-item-link">
+											<img src="images/icons/in.png" alt="" />
+										</a>
+									</li>
+									<li class="footer__header-social-item">
+										<a href="" class="footer__header-social-item-link">
+											<img src="images/icons/wi.png" alt="" />
+										</a>
+									</li>
+									<li class="footer__header-social-item">
+										<a href="" class="footer__header-social-item-link">
+											<img src="images/icons/fasebook.png" alt="" />
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<div class="container">
+					<div class="footer__bottom-box">
+						<div class="footer__bottom-cogitating">
+							<p class="footer__bottom-cogitating-text">
+								© Copyright 2013 Css Author, All Rights Reserved.
+							</p>
+						</div>
+						<div class="header__top-navigation">
+							<a href="#" class="header__top-navigation-link">About Us</a>
+							<a href="#" class="header__top-navigation-link"
+								>Delivery & Returns</a
+							>
+							<a href="#" class="header__top-navigation-link"
+								>Terms & Conditions
+							</a>
+							<a href="#" class="header__top-navigation-link"> Contact Us</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
